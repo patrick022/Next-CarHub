@@ -46,8 +46,6 @@ export default function Home() {
   };
 
   useEffect(() => {
-    console.log(fuel, transmissionType, year, limit, manufacturer, model);
-
     getCars();
   }, [fuel, year, limit, manufacturer, model, transmissionType]);
 
