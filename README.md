@@ -1,4 +1,4 @@
-![image](https://github.com/patrick022/Next-CarHub/assets/50113800/21563029-3d3d-4657-be92-d0bfc68dddf0)# CarHub
+# CarHub
 
 ## A Car rent page created by Nextjs
 
