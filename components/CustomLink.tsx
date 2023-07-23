@@ -14,7 +14,7 @@ const CustomLink = ({
       <a
         target="_blank"
         rel="noopener noreferrer"
-        href="https://github.com/patrick022/JobForte-MERN-production"
+        href="https://github.com/patrick022/Next-CarHub"
         className={`custom-btn ${containerStyles}`}
       >
         <span className={`flex-1 ${textStyles}`}>{title}</span>
