@@ -18,8 +18,8 @@ export interface CustomLinkProps {
 }
 
 export interface SearchManufacturerProps {
-  selected: string;
-  setSelected: (selected: string) => void;
+  manufacturer: string;
+  setManuFacturer: (manufacturer: string) => void;
 }
 
 export interface CarProps {
@@ -45,7 +45,11 @@ export interface FilterProps {
   fuel: string;
   limit: number;
   model: string;
-  transmissionType: string;
+  transmission: string;
+}
+
+export interface HomeProps {
+  searchParams: FilterProps;
 }
 
 export interface OptionProps {
@@ -53,16 +57,14 @@ export interface OptionProps {
   value: string;
 }
 
-export interface CustomFilterProps<T> {
+export interface CustomFilterProps {
   title: string;
   options: OptionProps[];
-  setFilter: (selected: T) => void;
 }
 
 export interface ShowMoreProps {
   pageNumber: number;
   isNext: boolean;
-  setLimit: (limit: number) => void;
 }
 
 export interface SearchBarProps {

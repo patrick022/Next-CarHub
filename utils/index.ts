@@ -1,7 +1,7 @@
 import { CarProps, FilterProps } from "@/types";
 
 export async function fetchCars(filters: FilterProps) {
-  const { manufacturer, year, model, limit, fuel, transmissionType } = filters;
+  const { manufacturer, year, model, limit, fuel, transmission } = filters;
 
   const headers = {
     "X-RapidAPI-Key": process.env.NEXT_PUBLIC_RAPID_API || "",
@@ -15,7 +15,7 @@ export async function fetchCars(filters: FilterProps) {
   url.searchParams.append("model", model);
   url.searchParams.append("limit", `${limit}`);
   url.searchParams.append("fuel_type", fuel);
-  url.searchParams.append("transmission", transmissionType);
+  url.searchParams.append("transmission", transmission);
 
   //Manual url parameters approach
   // const response = await fetch(
