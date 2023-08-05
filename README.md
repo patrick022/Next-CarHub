@@ -17,3 +17,7 @@
   - Tailwind CSS
   - Typescript
   - Headless UI React
+
+### Git Branches:
+  - Main (client Version Deployed)
+  - Server side version
